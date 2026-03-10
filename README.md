@@ -1,16 +1,15 @@
-## ☁️ Sentinel-Pay: AWS Transaction Dashboard
+## ☁️ Sentinel-Pay: AWS Fraud Monitoring Dashboard
 
-A serverless cloud solution for financial data observability. Built an automated pipeline that ingests banking transaction data into **AWS S3**, triggers **AWS Lambda** for real-time processing, and visualizes trends through an interactive **Streamlit** dashboard. Focuses on high-availability architecture and secure cloud data handling.
+A secure, serverless financial data pipeline designed for **real-time transaction monitoring and fraud detection**. Sentinel-Pay **ingests banking transaction data into AWS S3**, triggers **AWS Lambda functions** to process transactions automatically, and **visualizes anomalies** through an interactive **Streamlit dashboard**. Features include high-value transaction alerts, impossible travel detection, and data-driven summaries to support decision-making.
 
-**Key Features:**
-- Real-time transaction ingestion from CSV/JSON
-- Fraud detection rules: High Value & Impossible Travel alerts
-- Streamlit dashboard for monitoring transactions
-- Serverless architecture using AWS S3 + Lambda
-- Secure handling of credentials and sensitive data (no secrets committed to repo)
+### Key Highlights
+- Real-time fraud monitoring for financial transactions  
+- High-availability serverless architecture with AWS S3 and Lambda  
+- Secure handling of sensitive financial data (no secrets stored in code)  
+- Interactive Streamlit dashboard for analytics and operational insight  
 
-**Tech Stack:**  
-Python · AWS Lambda · AWS S3 · Boto3 · Streamlit · JSON · Data Automation · Serverless Architecture  
+### Tech Stack
+Python · Pandas · AWS Lambda · AWS S3 · Boto3 · Streamlit · JSON · Data Automation · Serverless Architecture
 
 **Setup Instructions:**  
 1. Clone the repo.  
@@ -19,4 +18,5 @@ Python · AWS Lambda · AWS S3 · Boto3 · Streamlit · JSON · Data Automation 
 4. Run the Streamlit dashboard: `streamlit run Processing/dashboard.py`.  
 
 > **Note:** All sensitive keys and passwords have been removed. Configure your own AWS access keys in environment variables or AWS Secrets Manager.
+
 
